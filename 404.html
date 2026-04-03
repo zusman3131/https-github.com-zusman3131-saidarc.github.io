@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Arc Raiders Guide</title>
+    <meta name="description" content="Page not found. Return to the Arc Raiders Guide homepage.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: var(--space-8);
+            background: var(--color-bg-secondary);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .error-page::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                linear-gradient(135deg, rgba(255, 107, 53, 0.05) 0%, transparent 50%),
+                linear-gradient(225deg, rgba(255, 107, 53, 0.03) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .error-content {
+            position: relative;
+            z-index: 1;
+            max-width: 600px;
+        }
+
+        .error-code {
+            font-family: var(--font-display);
+            font-size: clamp(120px, 25vw, 200px);
+            font-weight: 700;
+            line-height: 1;
+            background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-hover) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: var(--space-4);
+            opacity: 0.8;
+        }
+
+        .error-icon {
+            font-size: 64px;
+            margin-bottom: var(--space-6);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .error-title {
+            font-family: var(--font-display);
+            font-size: var(--text-3xl);
+            font-weight: 700;
+            margin-bottom: var(--space-4);
+            color: var(--color-text-primary);
+        }
+
+        .error-message {
+            font-size: var(--text-lg);
+            color: var(--color-text-secondary);
+            margin-bottom: var(--space-8);
+            line-height: 1.7;
+        }
+
+        .error-actions {
+            display: flex;
+            gap: var(--space-4);
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .error-suggestions {
+            margin-top: var(--space-12);
+            padding-top: var(--space-8);
+            border-top: 1px solid var(--color-border);
+        }
+
+        .error-suggestions h3 {
+            font-family: var(--font-display);
+            font-size: var(--text-lg);
+            font-weight: 600;
+            margin-bottom: var(--space-6);
+            color: var(--color-text-secondary);
+        }
+
+        .suggestion-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: var(--space-4);
+        }
+
+        .suggestion-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-2);
+            padding: var(--space-4) var(--space-6);
+            background: var(--color-bg-card);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-lg);
+            color: var(--color-text-primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .suggestion-link:hover {
+            background: var(--color-bg-tertiary);
+            border-color: var(--color-accent);
+            transform: translateY(-2px);
+        }
+
+        .glitch-text {
+            position: relative;
+            display: inline-block;
+        }
+
+        .glitch-text::before,
+        .glitch-text::after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .glitch-text::before {
+            animation: glitch-1 2s infinite;
+            color: #ff0000;
+            z-index: -1;
+        }
+
+        .glitch-text::after {
+            animation: glitch-2 2s infinite;
+            color: #00ffff;
+            z-index: -2;
+        }
+
+        @keyframes glitch-1 {
+            0%, 100% { clip-path: inset(0 0 0 0); transform: translate(0); }
+            20% { clip-path: inset(20% 0 60% 0); transform: translate(-2px, 2px); }
+            40% { clip-path: inset(40% 0 40% 0); transform: translate(2px, -2px); }
+            60% { clip-path: inset(60% 0 20% 0); transform: translate(-2px, 0); }
+            80% { clip-path: inset(80% 0 0 0); transform: translate(2px, 2px); }
+        }
+
+        @keyframes glitch-2 {
+            0%, 100% { clip-path: inset(0 0 0 0); transform: translate(0); }
+            20% { clip-path: inset(60% 0 20% 0); transform: translate(2px, -2px); }
+            40% { clip-path: inset(40% 0 40% 0); transform: translate(-2px, 2px); }
+            60% { clip-path: inset(20% 0 60% 0); transform: translate(2px, 0); }
+            80% { clip-path: inset(0 0 80% 0); transform: translate(-2px, -2px); }
+        }
+
+        @media (max-width: 640px) {
+            .error-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .error-actions .btn {
+                width: 100%;
+                max-width: 280px;
+            }
+
+            .suggestion-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to Content</a>
+    <!-- Simple Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">ARC RAIDERS</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Error Content -->
+    <main class="error-page">
+        <div class="error-content">
+            <div class="error-icon">🎯</div>
+            <h1 class="error-code glitch-text" data-text="404">404</h1>
+            <h2 class="error-title">Target Not Found</h2>
+            <p class="error-message">
+                Looks like this page has been extracted... or never existed. 
+                The coordinates you entered don't match any location in the Rust Belt.
+            </p>
+            
+            <div class="error-actions">
+                <a href="index.html" class="btn btn-primary">🏠 Return to Base</a>
+                <a href="javascript:history.back()" class="btn btn-secondary">← Go Back</a>
+            </div>
+
+            <div class="error-suggestions">
+                <h3>Popular Destinations</h3>
+                <div class="suggestion-grid">
+                    <a href="weapons.html" class="suggestion-link">
+                        <span>🔫</span> Weapons
+                    </a>
+                    <a href="maps.html" class="suggestion-link">
+                        <span>🗺️</span> Maps
+                    </a>
+                    <a href="beginner-tips.html" class="suggestion-link">
+                        <span>🎯</span> Tips
+                    </a>
+                    <a href="guides.html" class="suggestion-link">
+                        <span>📚</span> Guides
+                    </a>
+                    <a href="crafting.html" class="suggestion-link">
+                        <span>🔧</span> Crafting
+                    </a>
+                    <a href="extraction.html" class="suggestion-link">
+                        <span>🏃</span> Extract
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

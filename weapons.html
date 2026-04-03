@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Primary Meta Tags -->
+    <title>Weapons Database | Arc Raiders Guide</title>
+    <meta name="description" content="Complete Arc Raiders weapons database with stats, damage values, and comparison tools for all 21 weapons.">
+    <meta name="keywords" content="Arc Raiders, weapons, database, stats, damage, guns, loadout">
+    <meta name="author" content="Arc Raiders Guide">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://arcraiders.guide/weapons.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://arcraiders.guide/weapons.html">
+    <meta property="og:title" content="Weapons Database | Arc Raiders Guide">
+    <meta property="og:description" content="Complete Arc Raiders weapons database with stats, damage values, and comparison tools for all 21 weapons.">
+    <meta property="og:image" content="https://arcraiders.guide/images/og-weapons.jpg">
+    <meta property="og:site_name" content="Arc Raiders Guide">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://arcraiders.guide/weapons.html">
+    <meta property="twitter:title" content="Weapons Database | Arc Raiders Guide">
+    <meta property="twitter:description" content="Complete Arc Raiders weapons database with stats, damage values, and comparison tools for all 21 weapons.">
+    <meta property="twitter:image" content="https://arcraiders.guide/images/og-weapons.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+    
+    <!-- Performance: Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/interactive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Fonts with display=swap for performance -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Preload Critical CSS -->
+    <link rel="preload" href="css/style.css" as="style">
+</head>
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to Content</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">ARC RAIDERS</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" type="button" aria-expanded="false" type="button">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="weapons.html" class="nav-link active">Weapons</a></li>
+                <li><a href="maps.html" class="nav-link">Maps</a></li>
+                <li><a href="crafting.html" class="nav-link">Crafting</a></li>
+                <li><a href="extraction.html" class="nav-link">Extraction</a></li>
+                <li><a href="guides.html" class="nav-link">Guides</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header id="main-content" class="page-header">
+        <div class="container">
+            <div class="header-badge">DATABASE</div>
+            <h1>Weapons Arsenal</h1>
+            <p>21 weapons across 7 categories with complete stats and comparison tools</p>
+        </div>
+    </header>
+
+    <!-- Weapon Filters -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="weapon-filters"
+            >
+                <div class="filter-group">
+                    <span class="filter-label">Category:</span>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-category="all">All</button>
+                        <button class="filter-btn" data-category="assault-rifle">Assault Rifles</button>
+                        <button class="filter-btn" data-category="battle-rifle">Battle Rifles</button>
+                        <button class="filter-btn" data-category="smg">SMGs</button>
+                        <button class="filter-btn" data-category="shotgun">Shotguns</button>
+                        <button class="filter-btn" data-category="sniper">Snipers</button>
+                        <button class="filter-btn" data-category="pistol">Pistols</button>
+                        <button class="filter-btn" data-category="special">Special</button>
+                    </div>
+                </div>
+                
+                <div class="filter-group">
+                    <span class="filter-label">Rarity:</span>
+                    <div class="filter-buttons rarity-filters">
+                        <button class="filter-btn active" data-rarity="all">All</button>
+                        <button class="filter-btn rarity-common" data-rarity="common">Common</button>
+                        <button class="filter-btn rarity-uncommon" data-rarity="uncommon">Uncommon</button>
+                        <button class="filter-btn rarity-rare" data-rarity="rare">Rare</button>
+                        <button class="filter-btn rarity-epic" data-rarity="epic">Epic</button>
+                        <button class="filter-btn rarity-legendary" data-rarity="legendary">Legendary</button>
+                    </div>
+                </div>
+                
+                <div class="filter-group search-group">
+                    <input type="text" class="search-input" placeholder="Search weapons...">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weapons Grid -->
+    <section class="weapons-section">
+        <div class="container">
+            <div class="weapons-grid">
+                
+                <!-- Assault Rifles -->
+                <div class="weapon-card" data-category="assault-rifle" data-rarity="common" data-name="kettle">
+                    <div class="weapon-header">
+                        <span class="weapon-rarity rarity-common">Common</span>
+                        <h3 class="weapon-name">Kettle</h3>
+                        <span class="weapon-type">Assault Rifle</span>
+                    </div>
+                    <div class="weapon-body">
+                        <div class="weapon-stats">
+                            <div class="stat-row"><span class="stat-name">Damage</span><div class="stat-bar"><div class="stat-fill" style="width: 20%"></div></div><span class="stat-value">10</span></div>
+                            <div class="stat-row"><span class="stat-name">Fire Rate</span><div class="stat-bar"><div class="stat-fill" style="width: 56%"></div></div><span class="stat-value">28</span></div>
+                            <div class="stat-row"><span class="stat-name">Range</span><div class="stat-bar"><div class="stat-fill" style="width: 43%"></div></div><span class="stat-value">42.8</span></div>
+                        </div>
+                        <div class="weapon-details">
+                            <div class="detail-item"><span class="detail-label">Ammo</span><span class="detail-value">Light</span></div>
+                            <div class="detail-item"><span class="detail-label">Magazine</span><span class="detail-value">20</span></div>
+                            <div class="detail-item"><span class="detail-label">Mode</span><span class="detail-value">Semi-Auto</span></div>
+                            <div class="detail-item"><span class="detail-label">ARC Penetration</span><span class="detail-value penetration-weak">Very Weak</span></div>
+                        </div>
+                    </div>
+                    <div class="weapon-footer">
+                        <p class="weapon-desc">Quick and accurate, but has low bullet velocity and takes a long time to reload.</p>
+                    </div>
+                </div>
+
+                <div class="weapon-card" data-category="assault-rifle" data-rarity="common" data-name="rattler">
+                    <div class="weapon-header">
+                        <span class="weapon-rarity rarity-common">Common</span>
+                        <h3 class="weapon-name">Rattler</h3>
+                        <span class="weapon-type">Assault Rifle</span>
+                    </div>
+                    <div class="weapon-body">
+                        <div class="weapon-stats">
+                            <div class="stat-row"><span class="stat-name">Damage</span><div class="stat-bar"><div class="stat-fill" style="width: 18%"></div></div><span class="stat-value">9</span></div>
+                            <div class="stat-row"><span class="stat-name">Fire Rate</span><div class="stat-bar"><div class="stat-fill" style="width: 66%"></div></div><span class="stat-value">33.3</span></div>
+                            <div class="stat-row"><span class="stat-name">Range</span><div class="stat-bar"><div class="stat-fill" style="width: 56%"></div></div><span class="stat-value">56.2</span></div>
+                        </div>
+                        <div class="weapon-details">
+                            <div class="detail-item"><span class="detail-label">Ammo</span><span class="detail-value">Medium</span></div>
+                            <div class="detail-item"><span class="detail-label">Magazine</span><span class="detail-value">10</span></div>
+                            <div class="detail-item"><span class="detail-label">Mode</span><span class="detail-value">Full-Auto</span></div>
+                            <div class="detail-item"><span class="detail-label">ARC Penetration</span><span class="detail-value penetration-moderate">Moderate</span></div>
+                        </div>
+                    </div>
+                    <div class="weapon-footer">
+                        <p class="weapon-desc">An affordable offensive option, but must be reloaded 2 bullets at a time.</p>
+                    </div>
+                </div>
+
+                <div class="weapon-card" data-category="assault-rifle" data-rarity="uncommon" data-name="arpeggio">
+                    <div class="weapon-header">
+                        <span class="weapon-rarity rarity-uncommon">Uncommon</span>
+                        <h3 class="weapon-name">Arpeggio</h3>
+                        <span class="weapon-type">Assault Rifle</span>
+                    </div>
+                    <div class="weapon-body">
+                        <div class="weapon-stats">
+                            <div class="stat-row"><span class="stat-name">Damage</span><div class="stat-bar"><div class="stat-fill" style="width: 19%"></div></div><span class="stat-value">9.5</span></div>
+                            <div class="stat-row"><span class="stat-name">Fire Rate</span><div class="stat-bar"><div class="stat-fill" style="width: 37%"></div></div><span class="stat-value">18.3</span></div>
+                            <div class="stat-row"><span class="stat-name">Range</span><div class="stat-bar"><div class="stat-fill" style="width: 56%"></div></div><span class="stat-value">55.9</span></div>
+                        </div>
+                        <div class="weapon-details">
+                            <div class="detail-item"><span class="detail-label">Ammo</span><span class="detail-value">Medium</span></div>
+                            <div class="detail-item"><span class="detail-label">Magazine</span><span class="detail-value">24</span></div>
+                            <div class="detail-item"><span class="detail-label">Mode</span><span class="detail-value">3-Round Burst</span></div>
+                            <div class="detail-item"><span class="detail-label">ARC Penetration</span><span class="detail-value penetration-moderate">Moderate</span></div>
+                        </div>
+                    </div>
+                    <div class="weapon-footer">
+                        <p class="weapon-desc">A 3-round burst assault rifle with decent damage output and accuracy.</p>
+                    </div>
+                </div>
+
+                <div class="weapon-card" data-category="assault-rifle" data-rarity="epic" data-name="tempest">
+                    <div class="weapon-header">
+                        <span class="weapon-rarity rarity-epic">Epic</span>
+                        <h3 class="weapon-name">Tempest</h3>
+                        <span class="weapon-type">Assault Rifle</span>
+                    </div>
+                    <div class="weapon-body">
+                        <div class="weapon-stats">
+                            <div class="stat-row"><span class="stat-name">Damage</span><div class="stat-bar"><div class="stat-fill" style="width: 20%"></div></div><span class="stat-value">10</span></div>
+                            <div class="stat-row"><span class="stat-name">Fire Rate</span><div class="stat-bar"><div class="stat-fill" style="width: 73%"></div></div><span class="stat-value">36.7</span></div>
+                            <div class="stat-row"><span class="stat-name">Range</span><div class="stat-bar"><div class="stat-fill" style="width: 56%"></div></div><span class="stat-value">55.9</span></div>
+                        </div>
+                        <div class="weapon-details">
+                            <div class="detail-item"><span class="detail-label">Ammo</span><span class="detail-value">Medium</span></div>
+                            <div class="detail-item"><span class="detail-label">Magazine</span><span class="detail-value">25</span></div>
+                            <div class="detail-item"><span class="detail-label">Mode</span><span class="detail-value">Full-Auto</span></div>
+                            <div class="detail-item"><span class="detail-label">ARC Penetration</span><span class="detail-value penetration-moderate">Moderate</span></div>
+                        </div>
+                    </div>
+                    <div class="weapon-footer">
+                        <p class="weapon-desc">Fully automatic assault rifle with moderate fire rate and accuracy. Popular choice for experienced raiders.</p>
+                    </div>
+                </div>
+
+                <div class="weapon-card" data-category="assault-rifle" data-rarity="epic" data-name="bettina">
+                    <div class="weapon-header">
+                        <span class="weapon-rarity rarity-epic">Epic</span>
+                        <h3 class="weapon-name">Bettina</h3>
+                        <span class="weapon-type">Assault Rifle</span>
+                    </div>
+                    <div class="weapon-body">
+                        <div class="weapon-stats">
+                            <div class="stat-row"><span class="stat-name">Damage</span><div class="stat-bar"><div class="stat-fill" style="width: 28%"></div></div><span class="stat-value">14</span></div>
+                            <div class="stat-row"><span class="stat-name">Fire Rate</span><div class="stat-bar"><div class="stat-fill" style="width: 64%"></div></div><span class="stat-value">32</span></div>
+                            <div class="stat-row"><span class="stat-name">Range</span><div class="stat-bar"><div class="stat-fill" style="width: 51%"></div></div><span class="stat-value">51.3</span></div>
+                        </div>
+                        <div class="weapon-details">
+                            <div class="detail-item"><span class="detail-label">Ammo</span><span class="detail-value">Heavy</span></div>
+                            <div class="detail-item"><span class="detail-label">Magazine</span><span class="detail-value">20</span></div>
+                            <div class="detail-item"><span class="detail-label">Mode</span><span class="detail-value">Full-Auto</span></div>
+                            <div class="detail-item"><span class="detail-label">ARC Penetration</span><span class="detail-value penetration-strong">Strong</span></div>
+                        </div>
+                    </div>
+                    <div class="weapon-footer">
+                        <p class="weapon-desc">Has slow fire rate and high damage output. Heavy ammo consumption is the trade-off.</p>
+                    </div>
+                </div>
+
+                <!-- Battle Rifles -->
+                <div class="weapon-card" data-category="battle-rifle" data-rarity="common" data-name="ferro">
+                    <div class="weapon-header">
+                        <span class="weapon-rarity rarity-common">Common</span>
+                        <h3 class="weapon-name">Ferro</h3>
+                        <span class="weapon-type">Battle Rifle</span>
+                    </div>
+                    <div class="weapon-body">
+                        <div class="weapon-stats">
+                            <div class="stat-row"><span class="stat-name">Damage</span><div class="stat-bar"><div class="stat-fill" style="width: 80%"></div></div><span class="stat-value">40</span></div>
+                            <div class="stat-row"><span class="stat-name">Fire Rate</span><div class="stat-bar"><div class="stat-fill" style="width: 13%"></div></div><span class="stat-value">6.6</span></div>
+                            <div class="stat-row"><span class="stat-name">Range</span><div class="stat-bar"><div class="stat-fill" style="width: 53%"></div></div><span class="stat-value">53.1</span></div>
+                        </div>
+                        <div class="weapon-details">
+                            <div class="detail-item"><span class="detail-label">Ammo</span><span class="detail-value">Heavy</span></div>
+                            <div class="detail-item"><span class="detail-label">Magazine</span><span class="detail-value">1</span></div>
+                            <div class="detail-item"><span class="detail-label">Mode</span><span class="detail-value">Break-Action</span></div>
+                            <div class="detail-item"><span class="detail-label">ARC Penetration</span><span class="detail-value penetration-strong">Strong</span></div>
+                        </div>
+                    </div>
+                    <div class="weapon-footer">
+                        <p class="weapon-desc">Packs a punch, but must be reloaded between every shot. Excellent ARC armor penetration.</p>
+                    </div>
+                </div>
+
+                <div class="weapon-card" data-category="battle-rifle" data-rarity="rare" data-name="renegade">
+                    <div class="weapon-header">
+                        <span class="weapon-rarity rarity-rare">Rare</span>
+                        <h3 class="weapon-name">Renegade</h3>
+                        <span class="weapon-type">Battle Rifle</span>
+                    </div>
+                    <div class="weapon-body">
+                        <div class="weapon-stats">
+                            <div class="stat-row"><span class="stat-name">Damage</span><div class="stat-bar"><div class="stat-fill" style="width: 70%"></div></div><span class="stat-value">35</span></div>
+                            <div class="stat-row"><span class="stat-name">Fire Rate</span><div class="stat-bar"><div class="stat-fill" style="width: 42%"></div></div><span class="stat-value">21</span></div>
+                            <div class="stat-row"><span class="stat-name">Range</span><div class="stat-bar"><div class="stat-fill" style="width: 69%"></div></div><span class="stat-value">68.8</span></div>
+                        </div>
+                        <div class="weapon-details">
+                            <div class="detail-item"><span class="detail-label">Ammo</span><span class="detail-value">Medium</span></div>
+                            <div class="detail-item"><span class="detail-label">Magazine</span><span class="detail-value">8</span></div>
+                            <div class="detail-item"><span class="detail-label">Mode</span><span class="detail-value">Lever-Action</span></div>
+                            <div class="detail-item"><span class="detail-label">ARC Penetration</span><span class="detail-value penetration-moderate">Moderate</span></div>
+                        </div>
+                    </div>
+                    <div class="weapon-footer">
+                        <p class="weapon-desc">Has high damage output, accuracy and headshot damage. Excellent for mid-to-long range.</p>
+                    </div>
+                </div>
+
+                <div class="weapon-card" data-category="battle-rifle" data-rarity="legendary" data-name="aphelion">
+                    <div class="weapon-header">
+                        <span class="weapon-rarity rarity-legendary">Legendary</span>
+                        <h3 class="weapon-name">Aphelion</h3>
+                        <span class="weapon-type">Battle Rifle</span>
+                    </div>
+                    <div class="weapon-body">
+                        <div class="weapon-stats">
+                            <div class="stat-row"><span class="stat-name">Damage</span><div class="stat-bar"><div class="stat-fill" style="width: 50%"></div></div><span class="stat-value">25</span></div>
+                            <div class="stat-row"><span class="stat-name">Fire Rate</span><div class="stat-bar"><div class="stat-fill" style="width: 18%"></div></div><span class="stat-value">9</span></div>
+                            <div class="stat-row"><span class="stat-name">Range</span><div class="stat-bar"><div class="stat-fill" style="width: 76%"></div></div><span class="stat-value">76</span></div>
+                        </div>
+                        <div class="weapon-details">
+                            <div class="detail-item"><span class="detail-label">Ammo</span><span class="detail-value">Energy</span></div>
+                            <div class="detail-item"><span class="detail-label">Magazine</span><span class="detail-value">10</span></div>
+                            <div class="detail-item"><span class="detail-label">Mode</span><span class="detail-value">2-Round Burst</span></div>
+                            <div class="detail-item"><span class="detail-label">ARC Penetration</span><span class="detail-value penetration-strong">Strong</span></div>
+                        </div>
+                    </div>
+                    <div class="weapon-footer">
+                        <p class="weapon-desc">Fires high velocity energy rounds. Experimental weapon with high rarity cost.</p>
+                    </div>
+                </div>
+
+                <!-- SMGs -->
+                <div class="weapon-card" data-category="smg" data-rarity="common" data-name="stitcher">
+                    <div class="weapon-header">
+                        <span class="weapon-rarity rarity-common">Common</span>
+                        <h3 class="weapon-name">Stitcher</h3>
+                        <span class="weapon-type">SMG</span>
+                    </div>
+                    <div class="weapon-body">
+                        <div class="weapon-stats">
+                            <div class="stat-row"><span class="stat-name">Damage</span><div class="stat-bar"><div class="stat-fill" style="width: 14%"></div></div><span class="stat-value">7</span></div>
+                            <div class="stat-row"><span class="stat-name">Fire Rate</span><div class="stat-bar"><div class="stat-fill" style="width: 91%"></div></div><span class="stat-value">45.3</span></div>
+                            <div class="stat-row"><span class="stat-name">Range</span><div class="stat-bar"><div class="stat-fill" style="width: 42%"></div></div><span class="stat-value">42.1</span></div>
+                        </div>
+                        <div class="weapon-details">
+                            <div class="detail-item"><span class="detail-label">Ammo</span><span class="detail-value">Light</span></div>
+                            <div class="detail-item"><span class="detail-label">Magazine</span><span class="detail-value">20</span></div>
+                            <div class="detail-item"><span class="detail-label">Mode</span><span class="detail-value">Full-Auto</span></div>
+                            <div class="detail-item"><span class="detail-label">ARC Penetration</span><span class="detail-value penetration-weak">Very Weak</span></div>
+                        </div>
+                    </div>
+                    <div class="weapon-footer">
+                        <p class="weapon-desc">Your starting SMG. Deals good damage but has low fire-rate and can be hard to control.</p>
+                    </div>
+                </div>
+
+                <div class="weapon-card" data-category="smg" data-rarity="epic" data-name="bobcat">
+                    <div class="weapon-header">
+                        <span class="weapon-rarity rarity-epic">Epic</span>
+                        <h3 class="weapon-name">Bobcat</h3>
+                        <span class="weapon-type">SMG</span>
+                    </div>
+                    <div class="weapon-body">
+                        <div class="weapon-stats">
+                            <div class="stat-row"><span class="stat-name">Damage</span><div class="stat-bar"><div class="stat-fill" style="width: 12%"></div></div><span class="stat-value">6</span></div>
+                            <div class="stat-row"><span class="stat-name">Fire Rate</span><div class="stat-bar"><div class="stat-fill" style="width: 100%"></div></div><span class="stat-value">66.7</span></div>
+                            <div class="stat-row"><span class="stat-name">Range</span><div class="stat-bar"><div class="stat-fill" style="width: 44%"></div></div><span class="stat-value">44</span></div>
+                        </div>
+                        <div class="weapon-details">
+                            <div class="detail-item"><span class="detail-label">Ammo</span><span class="detail-value">Light</span></div>
+                            <div class="detail-item"><span class="detail-label">Magazine</span><span class="detail-value">20</span></div>
+                            <div class="detail-item"><span class="detail-label">Mode</span><span class="detail-value">Full-Auto</span></div>
+                            <div class="detail-item"><span class="detail-label">ARC Penetration</span><span class="detail-value penetration-weak">Very Weak</span></div>
+                        </div>
+                    </div>
+                    <div class="weapon-footer">
+                        <p class="weapon-desc">Has high fire rate but low accuracy. Shreds heavily armored opponents at close range.</p>
+                    </div>
+                </div>
+
+                <!-- Shotguns -->
+                <div class="weapon-card" data-category="shotgun" data-rarity="uncommon" data-name="il-toro">
+                    <div class="weapon-header">
+                        <span class="weapon-rarity rarity-uncommon">Uncommon</span>
+                        <h3 class="weapon-name">Il Toro</h3>
+                        <span class="weapon-type">Shotgun</span>
+                    </div>
+                    <div class="weapon-body">
+                        <div class="weapon-stats">
+                            <div class="stat-row"><span class="stat-name">Damage</span><div class="stat-bar"><div class="stat-fill" style="width: 100%"></div></div><span class="stat-value">67.5</span></div>
+                            <div class="stat-row"><span class="stat-name">Fire Rate</span><div class="stat-bar"><div class="stat-fill" style="width: 29%"></div></div><span class="stat-value">14.3</span></div>
+                            <div class="stat-row"><span class="stat-name">Range</span><div class="stat-bar"><div class="stat-fill" style="width: 20%"></div></div><span class="stat-value">20</span></div>
+                        </div>
+                        <div class="weapon-details">
+                            <div class="detail-item"><span class="detail-label">Ammo</span><span class="detail-value">Shotgun</span></div>
+                            <div class="detail-item"><span class="detail-label">Magazine</span><span class="detail-value">5</span></div>
+                            <div class="detail-item"><span class="detail-label">Mode</span><span class="detail-value">Pump-Action</span></div>
+                            <div class="detail-item"><span class="detail-label">ARC Penetration</span><span class="detail-value penetration-weak">Weak</span></div>
+                        </div>
+                    </div>
+                    <div class="weapon-footer">
+                        <p class="weapon-desc">Has large bullet spread, sharp falloff, and high damage output. 2-3 shots to kill.</p>
+                    </div>
+                </div>
+
+                <div class="weapon-card" data-category="shotgun" data-rarity="epic" data-name="vulcano">
+                    <div class="weapon-header">
+                        <span class="weapon-rarity rarity-epic">Epic</span>
+                        <h3 class="weapon-name">Vulcano</h3>
+                        <span class="weapon-type">Shotgun</span>
+                    </div>
+                    <div class="weapon-body">
+                        <div class="weapon-stats">
+                            <div class="stat-row"><span class="stat-name">Damage</span><div class="stat-bar"><div class="stat-fill" style="width: 74%"></div></div><span class="stat-value">49.5</span></div>
+                            <div class="stat-row"><span class="stat-name">Fire Rate</span><div class="stat-bar"><div class="stat-fill" style="width: 53%"></div></div><span class="stat-value">26.4</span></div>
+                            <div class="stat-row"><span class="stat-name">Range</span><div class="stat-bar"><div class="stat-fill" style="width: 22%"></div></div><span class="stat-value">22.2</span></div>
+                        </div>
+                        <div class="weapon-details">
+                            <div class="detail-item"><span class="detail-label">Ammo</span><span class="detail-value">Shotgun</span></div>
+                            <div class="detail-item"><span class="detail-label">Magazine</span><span class="detail-value">6</span></div>
+                            <div class="detail-item"><span class="detail-label">Mode</span><span class="detail-value">Semi-Auto</span></div>
+                            <div class="detail-item"><span class="detail-label">ARC Penetration</span><span class="detail-value penetration-weak">Weak</span></div>
+                        </div>
+                    </div>
+                    <div class="weapon-footer">
+                        <p class="weapon-desc">Deals highest per-shot damage. Fast firing speed but only 4 shots before reloading.</p>
+                    </div>
+                </div>
+
+                <!-- Sniper Rifles -->
+                <div class="weapon-card" data-category="sniper" data-rarity="rare" data-name="osprey">
+                    <div class="weapon-header">
+                        <span class="weapon-rarity rarity-rare">Rare</span>
+                        <h3 class="weapon-name">Osprey</h3>
+                        <span class="weapon-type">Sniper Rifle</span>
+                    </div>
+                    <div class="weapon-body">
+                        <div class="weapon-stats">
+                            <div class="stat-row"><span class="stat-name">Damage</span><div class="stat-bar"><div class="stat-fill" style="width: 90%"></div></div><span class="stat-value">45</span></div>
+                            <div class="stat-row"><span class="stat-name">Fire Rate</span><div class="stat-bar"><div class="stat-fill" style="width: 35%"></div></div><span class="stat-value">17.6</span></div>
+                            <div class="stat-row"><span class="stat-name">Range</span><div class="stat-bar"><div class="stat-fill" style="width: 80%"></div></div><span class="stat-value">80</span></div>
+                        </div>
+                        <div class="weapon-details">
+                            <div class="detail-item"><span class="detail-label">Ammo</span><span class="detail-value">Medium</span></div>
+                            <div class="detail-item"><span class="detail-label">Magazine</span><span class="detail-value">8</span></div>
+                            <div class="detail-item"><span class="detail-label">Mode</span><span class="detail-value">Bolt-Action</span></div>
+                            <div class="detail-item"><span class="detail-label">ARC Penetration</span><span class="detail-value penetration-moderate">Moderate</span></div>
+                        </div>
+                    </div>
+                    <div class="weapon-footer">
+                        <p class="weapon-desc">Pre-equipped with long-range scope. Harder to use at close range due to permanent scope.</p>
+                    </div>
+                </div>
+
+                <div class="weapon-card" data-category="sniper" data-rarity="legendary" data-name="jupiter">
+                    <div class="weapon-header">
+                        <span class="weapon-rarity rarity-legendary">Legendary</span>
+                        <h3 class="weapon-name">Jupiter</h3>
+                        <span class="weapon-type">Sniper Rifle</span>
+                    </div>
+                    <div class="weapon-body">
+                        <div class="weapon-stats">
+                            <div class="stat-row"><span class="stat-name">Damage</span><div class="stat-bar"><div class="stat-fill" style="width: 100%"></div></div><span class="stat-value">60</span></div>
+                            <div class="stat-row"><span class="stat-name">Fire Rate</span><div class="stat-bar"><div class="stat-fill" style="width: 24%"></div></div><span class="stat-value">12</span></div>
+                            <div class="stat-row"><span class="stat-name">Range</span><div class="stat-bar"><div class="stat-fill" style="width: 78%"></div></div><span class="stat-value">78.2</span></div>
+                        </div>
+                        <div class="weapon-details">
+                            <div class="detail-item"><span class="detail-label">Ammo</span><span class="detail-value">Energy</span></div>
+                            <div class="detail-item"><span class="detail-label">Magazine</span><span class="detail-value">5</span></div>
+                            <div class="detail-item"><span class="detail-label">Mode</span><span class="detail-value">Bolt-Action</span></div>
+                            <div class="detail-item"><span class="detail-label">ARC Penetration</span><span class="detail-value penetration-vstrong">Very Strong</span></div>
+                        </div>
+                    </div>
+                    <div class="weapon-footer">
+                        <p class="weapon-desc">Endgame sniper with incredible velocity. Capable of damaging multiple targets with one shot.</p>
+                    </div>
+                </div>
+
+                <!-- LMG -->
+                <div class="weapon-card" data-category="special" data-rarity="rare" data-name="torrente">
+                    <div class="weapon-header">
+                        <span class="weapon-rarity rarity-rare">Rare</span>
+                        <h3 class="weapon-name">Torrente</h3>
+                        <span class="weapon-type">LMG</span>
+                    </div>
+                    <div class="weapon-body">
+                        <div class="weapon-stats">
+                            <div class="stat-row"><span class="stat-name">Damage</span><div class="stat-bar"><div class="stat-fill" style="width: 16%"></div></div><span class="stat-value">8</span></div>
+                            <div class="stat-row"><span class="stat-name">Fire Rate</span><div class="stat-bar"><div class="stat-fill" style="width: 97%"></div></div><span class="stat-value">58.3</span></div>
+                            <div class="stat-row"><span class="stat-name">Range</span><div class="stat-bar"><div class="stat-fill" style="width: 50%"></div></div><span class="stat-value">49.9</span></div>
+                        </div>
+                        <div class="weapon-details">
+                            <div class="detail-item"><span class="detail-label">Ammo</span><span class="detail-value">Medium</span></div>
+                            <div class="detail-item"><span class="detail-label">Magazine</span><span class="detail-value">60</span></div>
+                            <div class="detail-item"><span class="detail-label">Mode</span><span class="detail-value">Full-Auto</span></div>
+                            <div class="detail-item"><span class="detail-label">ARC Penetration</span><span class="detail-value penetration-moderate">Moderate</span></div>
+                        </div>
+                    </div>
+                    <div class="weapon-footer">
+                        <p class="weapon-desc">Large ammo capacity, but only accurate while crouched. Highest DPS full-auto weapon.</p>
+                    </div>
+                </div>
+
+                <!-- Special -->
+                <div class="weapon-card" data-category="special" data-rarity="legendary" data-name="equalizer">
+                    <div class="weapon-header">
+                        <span class="weapon-rarity rarity-legendary">Legendary</span>
+                        <h3 class="weapon-name">Equalizer</h3>
+                        <span class="weapon-type">Special</span>
+                    </div>
+                    <div class="weapon-body">
+                        <div class="weapon-stats">
+                            <div class="stat-row"><span class="stat-name">Damage</span><div class="stat-bar"><div class="stat-fill" style="width: 16%"></div></div><span class="stat-value">8</span></div>
+                            <div class="stat-row"><span class="stat-name">Fire Rate</span><div class="stat-bar"><div class="stat-fill" style="width: 56%"></div></div><span class="stat-value">33.5</span></div>
+                            <div class="stat-row"><span class="stat-name">Range</span><div class="stat-bar"><div class="stat-fill" style="width: 68%"></div></div><span class="stat-value">68.2</span></div>
+                        </div>
+                        <div class="weapon-details">
+                            <div class="detail-item"><span class="detail-label">Ammo</span><span class="detail-value">Energy</span></div>
+                            <div class="detail-item"><span class="detail-label">Magazine</span><span class="detail-value">50</span></div>
+                            <div class="detail-item"><span class="detail-label">Mode</span><span class="detail-value">Beam</span></div>
+                            <div class="detail-item"><span class="detail-label">ARC Penetration</span><span class="detail-value penetration-vstrong">Very Strong</span></div>
+                        </div>
+                    </div>
+                    <div class="weapon-footer">
+                        <p class="weapon-desc">High capacity experimental beam rifle. Extremely effective against ARC armor and limbs.</p>
+                    </div>
+                </div>
+
+                <div class="weapon-card" data-category="special" data-rarity="epic" data-name="hullcracker">
+                    <div class="weapon-header">
+                        <span class="weapon-rarity rarity-epic">Epic</span>
+                        <h3 class="weapon-name">Hullcracker</h3>
+                        <span class="weapon-type">Special</span>
+                    </div>
+                    <div class="weapon-body">
+                        <div class="weapon-stats">
+                            <div class="stat-row"><span class="stat-name">Damage</span><div class="stat-bar"><div class="stat-fill" style="width: 100%"></div></div><span class="stat-value">100</span></div>
+                            <div class="stat-row"><span class="stat-name">Fire Rate</span><div class="stat-bar"><div class="stat-fill" style="width: 41%"></div></div><span class="stat-value">20.3</span></div>
+                            <div class="stat-row"><span class="stat-name">Range</span><div class="stat-bar"><div class="stat-fill" style="width: 39%"></div></div><span class="stat-value">38.9</span></div>
+                        </div>
+                        <div class="weapon-details">
+                            <div class="detail-item"><span class="detail-label">Ammo</span><span class="detail-value">Launcher</span></div>
+                            <div class="detail-item"><span class="detail-label">Magazine</span><span class="detail-value">5</span></div>
+                            <div class="detail-item"><span class="detail-label">Mode</span><span class="detail-value">Pump-Action</span></div>
+                            <div class="detail-item"><span class="detail-label">ARC Penetration</span><span class="detail-value penetration-vstrong">Very Strong</span></div>
+                        </div>
+                    </div>
+                    <div class="weapon-footer">
+                        <p class="weapon-desc">Fires explosive projectiles that ONLY detonate on ARC. Use against Bastions and Queens.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="no-results" style="display: none;">
+                <p>No weapons match your filters. Try adjusting your search criteria.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weapon Tips Section -->
+    <section class="section section-darker">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Weapon Tips</h2>
+            </div>
+            
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-number">01</div>
+                    <h4>Best Starter Loadout</h4>
+                    <p>Use Rattler as primary and Ferro as secondary. This gives you reliable full-auto and high-damage single shots.</p>
+                </div>
+                
+                <div class="tip-card">
+                    <div class="tip-number">02</div>
+                    <h4>ARC Killing Build</h4>
+                    <p>Bring a Hullcracker for heavy ARCs and an Equalizer or Ferro for general combat. Focus fire on weak points.</p>
+                </div>
+                
+                <div class="tip-card">
+                    <div class="tip-number">03</div>
+                    <h4>Ammo Efficiency</h4>
+                    <p>Bettina uses expensive Heavy Ammo. For budget runs, stick to Medium Ammo weapons like Tempest or Renegade.</p>
+                </div>
+                
+                <div class="tip-card">
+                    <div class="tip-number">04</div>
+                    <h4>Close Quarters Combat</h4>
+                    <p>In buildings and tight spaces, switch to SMGs or shotguns. The Bobcat and Vulcano excel at close range.</p>
+                </div>
+                
+                <div class="tip-card">
+                    <div class="tip-number">05</div>
+                    <h4>Long Range Engagements</h4>
+                    <p>The Osprey and Jupiter are your best options for long range. Remember: Osprey has a permanent scope.</p>
+                </div>
+                
+                <div class="tip-card">
+                    <div class="tip-number">06</div>
+                    <h4>The Hullcracker Secret</h4>
+                    <p>This grenade launcher ONLY damages ARCs, not players. Save it for Bastions, Commandos, and Boss enemies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">ARC RAIDERS GUIDE</span>
+                    <p>A community-made resource for new and experienced raiders.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h5>Guide</h5>
+                        <ul>
+                            <li><a href="weapons.html">Weapons</a></li>
+                            <li><a href="maps.html">Maps</a></li>
+                            <li><a href="crafting.html">Crafting</a></li>
+                            <li><a href="extraction.html">Extraction</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h5>Resources</h5>
+                        <ul>
+                            <li><a href="guides.html">Beginner Guides</a></li>
+                            <li><a href="guides.html#advanced">Advanced Tips</a></li>
+                            <li><a href="guides.html#loot">Loot Tables</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Arc Raiders Guide. Not affiliated with Embark Studios.</p>
+                <p class="disclaimer">Arc Raiders is a trademark of Embark Studios. All game content belongs to their respective owners.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/weapon-comparison.js"></script>
+</body>
+</html>

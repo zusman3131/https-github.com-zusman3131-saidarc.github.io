@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Primary Meta Tags -->
+    <title>Enemy Database | Arc Raiders Guide</title>
+    <meta name="description" content="Complete Arc Raiders enemy database with stats, weaknesses, and strategies for all ARC robots.">
+    <meta name="keywords" content="Arc Raiders, enemies, ARC, database, Sentinels, Ticks, Queen, Matriarch, strategies">
+    <meta name="author" content="Arc Raiders Guide">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://arcraiders.guide/enemies.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://arcraiders.guide/enemies.html">
+    <meta property="og:title" content="Enemy Database | Arc Raiders Guide">
+    <meta property="og:description" content="Complete Arc Raiders enemy database with stats, weaknesses, and strategies for all ARC robots.">
+    <meta property="og:image" content="https://arcraiders.guide/images/og-enemies.jpg">
+    <meta property="og:site_name" content="Arc Raiders Guide">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://arcraiders.guide/enemies.html">
+    <meta property="twitter:title" content="Enemy Database | Arc Raiders Guide">
+    <meta property="twitter:description" content="Complete Arc Raiders enemy database with stats, weaknesses, and strategies for all ARC robots.">
+    <meta property="twitter:image" content="https://arcraiders.guide/images/og-enemies.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+    
+    <!-- Performance: Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    
+    <!-- Google Fonts with display=swap for performance -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Preload Critical CSS -->
+    <link rel="preload" href="css/style.css" as="style">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+<body>
+    <a href="#main-content" class="skip-to-content">Skip to Content</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">ARC RAIDERS</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" type="button">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="weapons.html" class="nav-link">Weapons</a></li>
+                <li><a href="maps.html" class="nav-link">Maps</a></li>
+                <li><a href="crafting.html" class="nav-link">Crafting</a></li>
+                <li><a href="extraction.html" class="nav-link">Extraction</a></li>
+                <li><a href="guides.html" class="nav-link">Guides</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header id="main-content" class="page-header">
+        <div class="container">
+            <div class="header-badge">DATABASE</div>
+            <h1>Enemy Database</h1>
+            <p>Complete guide to all ARC threats in the Rust Belt</p>
+        </div>
+    </header>
+
+    <!-- Enemy Filters -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="enemy-filters">
+                <div class="filter-group">
+                    <span class="filter-label">Threat Level:</span>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-threat="all">All</button>
+                        <button class="filter-btn" data-threat="low">Low</button>
+                        <button class="filter-btn" data-threat="medium">Medium</button>
+                        <button class="filter-btn" data-threat="high">High</button>
+                        <button class="filter-btn" data-threat="boss">Boss</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Basic Enemies -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Basic Enemies</h2>
+                <p class="section-subtitle">Common threats you'll encounter frequently</p>
+            </div>
+
+            <div class="enemies-grid">
+                <!-- Sentinel -->
+                <div class="enemy-card" data-threat="low">
+                    <div class="enemy-header">
+                        <div class="enemy-icon">🤖</div>
+                        <div class="enemy-title">
+                            <h3>Sentinel</h3>
+                            <span class="enemy-type">Patrol Drone</span>
+                        </div>
+                        <span class="threat-badge threat-low">LOW</span>
+                    </div>
+                    <div class="enemy-body">
+                        <p class="enemy-desc">Basic patrol drones that roam the maps in predictable patterns. The most common ARC encounter.</p>
+                        <div class="enemy-weakness">
+                            <strong>Weakness:</strong> Any weapon - weakest enemy type
+                        </div>
+                        <div class="enemy-tips">
+                            <h4>Combat Tips</h4>
+                            <ul>
+                                <li>Patrol in predictable loops - learn their routes</li>
+                                <li>Easy to eliminate solo</li>
+                                <li>Sprinting attracts their attention</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tick -->
+                <div class="enemy-card" data-threat="low">
+                    <div class="enemy-header">
+                        <div class="enemy-icon">🕷️</div>
+                        <div class="enemy-title">
+                            <h3>Tick</h3>
+                            <span class="enemy-type">Infiltrator</span>
+                        </div>
+                        <span class="threat-badge threat-low">LOW-MED</span>
+                    </div>
+                    <div class="enemy-body">
+                        <p class="enemy-desc">Small indoor ARC units that grab onto players and deal continuous damage. Found primarily inside buildings.</p>
+                        <div class="enemy-weakness">
+                            <strong>Weakness:</strong> High rate-of-fire weapons
+                        </div>
+                        <div class="enemy-tips">
+                            <h4>Combat Tips</h4>
+                            <ul>
+                                <li>Found indoors - check corners carefully</li>
+                                <li>Quick bursts from SMGs or ARs work best</li>
+                                <li>Stella Montis is excellent for Tick farming</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wasp -->
+                <div class="enemy-card" data-threat="low">
+                    <div class="enemy-header">
+                        <div class="enemy-icon">🐝</div>
+                        <div class="enemy-title">
+                            <h3>Wasp</h3>
+                            <span class="enemy-type">Flying Drone</span>
+                        </div>
+                        <span class="threat-badge threat-low">LOW</span>
+                    </div>
+                    <div class="enemy-body">
+                        <p class="enemy-desc">Basic flying drones that attack from the air. Relatively weak but can be annoying in groups.</p>
+                        <div class="enemy-weakness">
+                            <strong>Weakness:</strong> Any weapon - aim for the body
+                        </div>
+                        <div class="enemy-tips">
+                            <h4>Combat Tips</h4>
+                            <ul>
+                                <li>Track their flight pattern before shooting</li>
+                                <li>Can spawn inside walls (bug) - be cautious</li>
+                                <li>Prioritize when in groups</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Firefly -->
+                <div class="enemy-card" data-threat="medium">
+                    <div class="enemy-header">
+                        <div class="enemy-icon">🔥</div>
+                        <div class="enemy-title">
+                            <h3>Firefly</h3>
+                            <span class="enemy-type">Incendiary Drone</span>
+                        </div>
+                        <span class="threat-badge threat-medium">MEDIUM</span>
+                    </div>
+                    <div class="enemy-body">
+                        <p class="enemy-desc">Flying drones equipped with incendiary attacks. Deal fire damage over time and can be dangerous in enclosed spaces.</p>
+                        <div class="enemy-weakness">
+                            <strong>Weakness:</strong> Quick elimination, avoid fire zones
+                        </div>
+                        <div class="enemy-tips">
+                            <h4>Combat Tips</h4>
+                            <ul>
+                                <li>Shoot quickly before they fire</li>
+                                <li>Don't stand in fire patches</li>
+                                <li>Patch 1.22.0: Reduced chance for multiples to spawn together</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Medium Enemies -->
+    <section class="section section-darker">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Medium Threats</h2>
+                <p class="section-subtitle">Require attention and proper positioning</p>
+            </div>
+
+            <div class="enemies-grid">
+                <!-- Leaper -->
+                <div class="enemy-card" data-threat="medium">
+                    <div class="enemy-header">
+                        <div class="enemy-icon">🦘</div>
+                        <div class="enemy-title">
+                            <h3>Leaper</h3>
+                            <span class="enemy-type">Assault Unit</span>
+                        </div>
+                        <span class="threat-badge threat-medium">MEDIUM</span>
+                    </div>
+                    <div class="enemy-body">
+                        <p class="enemy-desc">Fast-moving ARC that jumps to close distance quickly. Can surprise players who aren't paying attention.</p>
+                        <div class="enemy-weakness">
+                            <strong>Weakness:</strong> Keep distance, shoot legs when they land
+                        </div>
+                        <div class="enemy-tips">
+                            <h4>Combat Tips</h4>
+                            <ul>
+                                <li>Maintain distance - their jump has range</li>
+                                <li>Shoot legs during landing animation</li>
+                                <li>Don't let them corner you</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hornet -->
+                <div class="enemy-card" data-threat="medium">
+                    <div class="enemy-header">
+                        <div class="enemy-icon">🦟</div>
+                        <div class="enemy-title">
+                            <h3>Hornet</h3>
+                            <span class="enemy-type">Aggressive Flyer</span>
+                        </div>
+                        <span class="threat-badge threat-medium">MEDIUM</span>
+                    </div>
+                    <div class="enemy-body">
+                        <p class="enemy-desc">Aggressive flying ARC that pursues players relentlessly. More durable than Wasps and deals more damage.</p>
+                        <div class="enemy-weakness">
+                            <strong>Weakness:</strong> Track and shoot - sustained fire
+                        </div>
+                        <div class="enemy-tips">
+                            <h4>Combat Tips</h4>
+                            <ul>
+                                <li>Track their movement continuously</li>
+                                <li>Don't stop shooting until they're down</li>
+                                <li>Take cover if multiple are present</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comet -->
+                <div class="enemy-card" data-threat="medium">
+                    <div class="enemy-header">
+                        <div class="enemy-icon">☄️</div>
+                        <div class="enemy-title">
+                            <h3>Comet</h3>
+                            <span class="enemy-type">Fast Striker</span>
+                        </div>
+                        <span class="threat-badge threat-medium">MEDIUM</span>
+                    </div>
+                    <div class="enemy-body">
+                        <p class="enemy-desc">Fast-moving ground ARC that zips around the battlefield. Unpredictable movement makes them tricky to hit.</p>
+                        <div class="enemy-weakness">
+                            <strong>Weakness:</strong> Stun and burst (improved in Patch 1.22.0)
+                        </div>
+                        <div class="enemy-tips">
+                            <h4>Combat Tips</h4>
+                            <ul>
+                                <li>Behavior is more predictable when stunned</li>
+                                <li>Use area damage if available</li>
+                                <li>Blue Gate Hurricane: Reduced spawn rate</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rocketeer -->
+                <div class="enemy-card" data-threat="medium">
+                    <div class="enemy-header">
+                        <div class="enemy-icon">🚀</div>
+                        <div class="enemy-title">
+                            <h3>Rocketeer</h3>
+                            <span class="enemy-type">Missile Unit</span>
+                        </div>
+                        <span class="threat-badge threat-medium">MEDIUM-HIGH</span>
+                    </div>
+                    <div class="enemy-body">
+                        <p class="enemy-desc">Missile-launching ARC that attacks from range. High damage potential if their rockets connect.</p>
+                        <div class="enemy-weakness">
+                            <strong>Weakness:</strong> Close the distance, dodge rockets
+                        </div>
+                        <div class="enemy-tips">
+                            <h4>Combat Tips</h4>
+                            <ul>
+                                <li>Close distance quickly - they're weaker up close</li>
+                                <li>Strafe to dodge incoming missiles</li>
+                                <li>Patch 1.22.0: Less collision damage, not instantly destroyed when stunned</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Heavy Enemies -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Heavy Threats</h2>
+                <p class="section-subtitle">Elite units requiring heavy weapons and coordination</p>
+            </div>
+
+            <div class="enemies-grid">
+                <!-- Bombardier -->
+                <div class="enemy-card" data-threat="high">
+                    <div class="enemy-header">
+                        <div class="enemy-icon">💣</div>
+                        <div class="enemy-title">
+                            <h3>Bombardier</h3>
+                            <span class="enemy-type">Artillery Unit</span>
+                        </div>
+                        <span class="threat-badge threat-high">HIGH</span>
+                    </div>
+                    <div class="enemy-body">
+                        <p class="enemy-desc">Heavy artillery ARC that rains explosives from a distance. Devastating area denial capabilities.</p>
+                        <div class="enemy-weakness">
+                            <strong>Weakness:</strong> Shoot core/weak points, keep mobile
+                        </div>
+                        <div class="enemy-tips">
+                            <h4>Combat Tips</h4>
+                            <ul>
+                                <li>Never stop moving - their AoE is lethal</li>
+                                <li>Target the core/weak points for extra damage</li>
+                                <li>Hullcracker grenade launcher is effective</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bastion -->
+                <div class="enemy-card" data-threat="high">
+                    <div class="enemy-header">
+                        <div class="enemy-icon">🛡️</div>
+                        <div class="enemy-title">
+                            <h3>Bastion</h3>
+                            <span class="enemy-type">Heavy Tank</span>
+                        </div>
+                        <span class="threat-badge threat-high">HIGH</span>
+                    </div>
+                    <div class="enemy-body">
+                        <p class="enemy-desc">Heavily armored tank unit with massive health pool. Soaks up damage and requires sustained fire to eliminate.</p>
+                        <div class="enemy-weakness">
+                            <strong>Weakness:</strong> Hullcracker, aim for weak points
+                        </div>
+                        <div class="enemy-tips">
+                            <h4>Combat Tips</h4>
+                            <ul>
+                                <li>Hullcracker grenade launcher is the best option</li>
+                                <li>Aim for knee joints and core when exposed</li>
+                                <li>Consider avoiding if under-equipped</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shredder -->
+                <div class="enemy-card" data-threat="high">
+                    <div class="enemy-header">
+                        <div class="enemy-icon">⚙️</div>
+                        <div class="enemy-title">
+                            <h3>Shredder</h3>
+                            <span class="enemy-type">Melee Destroyer</span>
+                        </div>
+                        <span class="threat-badge threat-high">HIGH</span>
+                    </div>
+                    <div class="enemy-body">
+                        <p class="enemy-desc">Devastating melee-focused ARC added to all maps in Patch 1.22.0. Extremely dangerous at close range.</p>
+                        <div class="enemy-weakness">
+                            <strong>Weakness:</strong> Heavy weapons, maintain extreme distance
+                        </div>
+                        <div class="enemy-tips">
+                            <h4>Combat Tips</h4>
+                            <ul>
+                                <li>NEVER let them get close - instant death zone</li>
+                                <li>Use heavy weapons and explosives</li>
+                                <li>Known bug: May float to ceiling in Hidden Bunker</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vaporizer -->
+                <div class="enemy-card" data-threat="high">
+                    <div class="enemy-header">
+                        <div class="enemy-icon">☠️</div>
+                        <div class="enemy-title">
+                            <h3>Vaporizer</h3>
+                            <span class="enemy-type">Elite Killer</span>
+                        </div>
+                        <span class="threat-badge threat-extreme">VERY HIGH</span>
+                    </div>
+                    <div class="enemy-body">
+                        <p class="enemy-desc">NEW in Patch 1.22.0 - The most dangerous regular ARC. Devastating AoE attacks that can wipe squads.</p>
+                        <div class="enemy-weakness">
+                            <strong>Weakness:</strong> Unknown - avoid if possible
+                        </div>
+                        <div class="enemy-tips">
+                            <h4>Combat Tips</h4>
+                            <ul>
+                                <li>AVOID unless you have coordinated squad and heavy weapons</li>
+                                <li>Strategy still being developed by community</li>
+                                <li>Report encounters to help map behavior</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Boss Enemies -->
+    <section class="section section-darker">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Boss Tier</h2>
+                <p class="section-subtitle">Raid-ending threats requiring full squad coordination</p>
+            </div>
+
+            <div class="boss-grid">
+                <!-- The Queen -->
+                <div class="boss-card" data-threat="boss">
+                    <div class="boss-image">👑</div>
+                    <div class="boss-content">
+                        <div class="boss-header">
+                            <h3>The Queen</h3>
+                            <span class="threat-badge threat-boss">BOSS</span>
+                        </div>
+                        <p class="boss-desc">Massive boss-tier enemy with devastating attacks and enormous health pool. A raid-ending threat for unprepared squads.</p>
+                        
+                        <div class="boss-stats">
+                            <div class="boss-stat">
+                                <span class="stat-label">Health</span>
+                                <span class="stat-value">Extreme</span>
+                            </div>
+                            <div class="boss-stat">
+                                <span class="stat-label">Damage</span>
+                                <span class="stat-value">Lethal</span>
+                            </div>
+                            <div class="boss-stat">
+                                <span class="stat-label">Speed</span>
+                                <span class="stat-value">Moderate</span>
+                            </div>
+                        </div>
+
+                        <div class="boss-strategy">
+                            <h4>Strategy</h4>
+                            <ul>
+                                <li>Requires coordinated squad fire</li>
+                                <li>Hullcracker essential for damage</li>
+                                <li>Designate roles: damage, support, revive</li>
+                                <li>Position for escape routes - don't get cornered</li>
+                                <li>Worth the risk for legendary loot drops</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Matriarch -->
+                <div class="boss-card" data-threat="boss">
+                    <div class="boss-image">🕸️</div>
+                    <div class="boss-content">
+                        <div class="boss-header">
+                            <h3>Matriarch</h3>
+                            <span class="threat-badge threat-boss">BOSS</span>
+                        </div>
+                        <p class="boss-desc">Another boss-tier threat with unique attack patterns. Often spawns with smaller ARC escorts, making engagement more complex.</p>
+                        
+                        <div class="boss-stats">
+                            <div class="boss-stat">
+                                <span class="stat-label">Health</span>
+                                <span class="stat-value">Extreme</span>
+                            </div>
+                            <div class="boss-stat">
+                                <span class="stat-label">Damage</span>
+                                <span class="stat-value">Lethal</span>
+                            </div>
+                            <div class="boss-stat">
+                                <span class="stat-label">Adds</span>
+                                <span class="stat-value">Yes</span>
+                            </div>
+                        </div>
+
+                        <div class="boss-strategy">
+                            <h4>Strategy</h4>
+                            <ul>
+                                <li>Clear escorts first to simplify the fight</li>
+                                <li>Coordinated fire from multiple angles</li>
+                                <li>Hullcracker for main damage</li>
+                                <li>Watch for special attack tells</li>
+                                <li>High risk, high reward - legendary drops</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Reference -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Quick Reference Table</h2>
+            </div>
+
+            <div class="table-wrapper">
+                <table class="enemy-table">
+                    <thead>
+                        <tr>
+                            <th>Enemy</th>
+                            <th>Threat</th>
+                            <th>Weakness</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sentinel</td>
+                            <td><span class="tag tag-low">Low</span></td>
+                            <td>Any weapon</td>
+                            <td>Common patrol drones</td>
+                        </tr>
+                        <tr>
+                            <td>Tick</td>
+                            <td><span class="tag tag-low">Low-Med</span></td>
+                            <td>High fire rate</td>
+                            <td>Indoor only, grabs players</td>
+                        </tr>
+                        <tr>
+                            <td>Wasp</td>
+                            <td><span class="tag tag-low">Low</span></td>
+                            <td>Any weapon</td>
+                            <td>Flying, can spawn in walls</td>
+                        </tr>
+                        <tr>
+                            <td>Firefly</td>
+                            <td><span class="tag tag-med">Medium</span></td>
+                            <td>Quick elimination</td>
+                            <td>Incendiary attacks</td>
+                        </tr>
+                        <tr>
+                            <td>Leaper</td>
+                            <td><span class="tag tag-med">Medium</span></td>
+                            <td>Keep distance, legs</td>
+                            <td>Jumping assault unit</td>
+                        </tr>
+                        <tr>
+                            <td>Hornet</td>
+                            <td><span class="tag tag-med">Medium</span></td>
+                            <td>Sustained fire</td>
+                            <td>Aggressive flyer</td>
+                        </tr>
+                        <tr>
+                            <td>Comet</td>
+                            <td><span class="tag tag-med">Medium</span></td>
+                            <td>Stun and burst</td>
+                            <td>Fast, unpredictable</td>
+                        </tr>
+                        <tr>
+                            <td>Rocketeer</td>
+                            <td><span class="tag tag-med">Med-High</span></td>
+                            <td>Close distance</td>
+                            <td>Missile attacks</td>
+                        </tr>
+                        <tr>
+                            <td>Bombardier</td>
+                            <td><span class="tag tag-high">High</span></td>
+                            <td>Core/weak points</td>
+                            <td>Artillery, AoE</td>
+                        </tr>
+                        <tr>
+                            <td>Bastion</td>
+                            <td><span class="tag tag-high">High</span></td>
+                            <td>Hullcracker</td>
+                            <td>Heavy tank, massive HP</td>
+                        </tr>
+                        <tr>
+                            <td>Shredder</td>
+                            <td><span class="tag tag-high">High</span></td>
+                            <td>Heavy weapons</td>
+                            <td>Melee destroyer</td>
+                        </tr>
+                        <tr>
+                            <td>Vaporizer</td>
+                            <td><span class="tag tag-extreme">Very High</span></td>
+                            <td>Avoid</td>
+                            <td>New in Patch 1.22.0</td>
+                        </tr>
+                        <tr>
+                            <td>The Queen</td>
+                            <td><span class="tag tag-boss">Boss</span></td>
+                            <td>Coordinated fire</td>
+                            <td>Squad only</td>
+                        </tr>
+                        <tr>
+                            <td>Matriarch</td>
+                            <td><span class="tag tag-boss">Boss</span></td>
+                            <td>Coordinated fire</td>
+                            <td>Has escorts</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">ARC RAIDERS GUIDE</span>
+                    <p>A community-made resource for new and experienced raiders.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h5>Guide</h5>
+                        <ul>
+                            <li><a href="weapons.html">Weapons</a></li>
+                            <li><a href="maps.html">Maps</a></li>
+                            <li><a href="crafting.html">Crafting</a></li>
+                            <li><a href="extraction.html">Extraction</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-group">
+                        <h5>Resources</h5>
+                        <ul>
+                            <li><a href="enemies.html">Enemy Database</a></li>
+                            <li><a href="guides.html">Beginner Guides</a></li>
+                            <li><a href="news.html">News</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Arc Raiders Guide. Not affiliated with Embark Studios.</p>
+                <p class="disclaimer">Arc Raiders is a trademark of Embark Studios. All game content belongs to their respective owners.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
